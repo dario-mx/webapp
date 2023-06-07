@@ -17,8 +17,8 @@ public class WebController {
   @GetMapping("/greeting")
 	public String greeting(@RequestParam(name="name", required=false, defaultValue="World") String name, Model model) {
 		Persona persona= new Persona();
-    persona.setIdPersona(1);
-    persona.setNombre("CODE");
+    persona.setIdPersona(2);
+    persona.setNombre("MITO");
     repo.save(persona);
     
     model.addAttribute("name", name);
